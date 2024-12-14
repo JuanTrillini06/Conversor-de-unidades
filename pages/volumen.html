@@ -15,6 +15,31 @@
             <h4>HISTORIAL</h4>
         </aside>
         <div class="conv-volumen">
+            <h4>VOLUMEN</h4>
+            <div class="inicial">
+                <h6>Unidad inicial</h6>
+                <select name="vol-inicial" id="vol-inicial">
+                    <option value="Litro">Litro</option>
+                    <option value="Mililitro">Mililitro</option>
+                    <option value="Centimetro Cubico">Centimetro Cubico</option>
+                    <option value="Metro Cubico">Metro Cubico</option>
+                </select>
+            </div>
+            <div class="valor">
+                <h6>Valor</h6>
+                <input type="text" id="valor">
+            </div>
+            <div class="final">
+                <h6>Unidad final</h6>
+                <select name="vol-final" id="vol-final">
+                    <option value="Litro">Litro</option>
+                    <option value="Mililitro">Mililitro</option>
+                    <option value="Centimetro Cubico">Centimetro Cubico</option>
+                    <option value="Metro Cubico">Metro Cubico</option>
+                </select>
+                <button id="calcular">Calcular</button>
+            </div>
+            <p>Resultado: <span id="resultado-vol">0</span></p>
         </div>
         <img class="imagen" src="../sources/img/logo.png" alt="">
     </main>

@@ -15,6 +15,33 @@
             <h4>HISTORIAL</h4>
         </aside>
         <div class="conv-masa">
+            <h4>MASA</h4>
+            <div class="inicial">
+                <h6>Unidad inicial</h6>
+                <select name="mass-inicial" id="mass-inicial">
+                    <option value="Tonelada">Tonelada</option>
+                    <option value="Kilogramo">Kilogramo</option>
+                    <option value="Gramo">Gramo</option>
+                    <option value="Libras">Libras</option>
+                    <option value="Onza">Onza</option>
+                </select>
+            </div>
+            <div class="valor">
+                <h6>Valor</h6>
+                <input type="text" id="valor">
+            </div>
+            <div class="final">
+                <h6>Unidad final</h6>
+                <select name="mass-final" id="mass-final">
+                    <option value="Tonelada">Tonelada</option>
+                    <option value="Kilogramo">Kilogramo</option>
+                    <option value="Gramo">Gramo</option>
+                    <option value="Libras">Libras</option>
+                    <option value="Onza">Onza</option>
+                </select>
+                <button id="calcular">Calcular</button>
+            </div>
+            <p>Resultado: <span id="resultado-mass">0</span></p>
         </div>
         <img class="imagen" src="../sources/img/logo.png" alt="">
     </main>

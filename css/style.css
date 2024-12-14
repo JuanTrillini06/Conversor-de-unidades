@@ -139,6 +139,24 @@ footer .return a {
   background-color: rgba(45, 155, 240, 0.5);
   border: 2px solid #69C7C1;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.conv-longitud #long-inicial {
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+}
+.conv-longitud #long-final {
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+}
+.conv-longitud #calcular {
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+  padding: 2px;
 }
 
 .imagen {
@@ -171,6 +189,24 @@ footer .return a {
   background-color: rgba(45, 155, 240, 0.5);
   border: 2px solid #69C7C1;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.conv-volumen #vol-inicial {
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+}
+.conv-volumen #vol-final {
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+}
+.conv-volumen #calcular {
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+  padding: 2px;
 }
 
 .imagen {
@@ -203,6 +239,24 @@ footer .return a {
   background-color: rgba(45, 155, 240, 0.5);
   border: 2px solid #69C7C1;
   padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.conv-masa #mass-inicial {
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+}
+.conv-masa #mass-final {
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+}
+.conv-masa #calcular {
+  background-color: lightgray;
+  border-radius: 5px;
+  color: black;
+  padding: 2px;
 }
 
 .imagen {

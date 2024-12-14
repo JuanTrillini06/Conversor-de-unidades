@@ -15,6 +15,37 @@
             <h4>HISTORIAL</h4>
         </aside>
         <div class="conv-longitud">
+            <h4>LONGITUD</h4>
+            <div class="inicial">
+                <h6>Unidad inicial</h6>
+                <select name="long-inicial" id="long-inicial">
+                    <option value="Kilometro">Kilometro</option>
+                    <option value="Metro">Metro</option>
+                    <option value="Centimetro">Centimetro</option>
+                    <option value="Milimetro">Milimetro</option>
+                    <option value="Milla">Milla</option>
+                    <option value="Pie">Pie</option>
+                    <option value="Pulgada">Pulgada</option>
+                </select>
+            </div>
+            <div class="valor">
+                <h6>Valor</h6>
+                <input type="text" id="valor">
+            </div>
+            <div class="final">
+                <h6>Unidad final</h6>
+                <select name="long-final" id="long-final">
+                    <option value="Kilometro">Kilometro</option>
+                    <option value="Metro">Metro</option>
+                    <option value="Centimetro">Centimetro</option>
+                    <option value="Milimetro">Milimetro</option>
+                    <option value="Milla">Milla</option>
+                    <option value="Pie">Pie</option>
+                    <option value="Pulgada">Pulgada</option>
+                </select>
+                <button id="calcular">Calcular</button>
+            </div>
+            <p>Resultado: <span id="resultado-long">0</span></p>
         </div>
         <img class="imagen" src="../sources/img/logo.png" alt="">
     </main>
