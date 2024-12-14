@@ -1,0 +1,31 @@
+.longitud {
+    display: grid;
+    justify-items: center;
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.5fr 1.5fr 1.5fr; 
+    grid-template-rows: 0.5fr auto 0.5fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      "historial . ."
+      "historial conv-longitud imagen"
+      "historial . ."; 
+  }
+  .historial {
+     grid-area: historial;
+     padding: 10px;
+     border: 2px solid #69C7C1;
+     text-align: center;
+ }
+  .conv-longitud { 
+    grid-area: conv-longitud; 
+    background-color: rgba(45, 155, 240, 0.5);
+    border: 2px solid #69C7C1;
+    padding: 50px;
+}
+  .imagen{
+    grid-area: imagen;
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}

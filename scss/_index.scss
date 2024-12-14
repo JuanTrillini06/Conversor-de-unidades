@@ -1,0 +1,58 @@
+.principal {
+    display: grid;
+    justify-items: center;
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 0.5fr 1.5fr 1.5fr; 
+    grid-template-rows: 0.5fr auto 0.5fr; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+      "historial . ."
+      "historial magnitudes imagen"
+      "historial . ."; 
+  }
+  .historial {
+     grid-area: historial;
+     padding: 10px;
+     border: 2px solid #69C7C1;
+     text-align: center;
+ }
+  .magnitudes { 
+    grid-area: magnitudes; 
+    background-color: rgba(45, 155, 240, 0.5);
+    border: 2px solid #69C7C1;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        :hover{
+            background-color: aliceblue;
+            border-radius: 10px;
+            transition-duration: 0.5s;
+            a{
+                color: rgb(45, 155, 240);
+            }
+       }
+        button{
+            padding: 10px;
+            background-color: rgb(45, 155, 240);
+            border: 2px solid #69C7C1;
+ 
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+  .imagen{
+    grid-area: imagen;
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
