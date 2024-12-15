@@ -6,8 +6,9 @@ function convertirMasa(){
     const unidadFinal = document.getElementById("mass-final").value;
     const valor = parseFloat(document.getElementById("valor-mass").value);
     let valorenKilogramos = valor * unitsMass[unidadFinal];
-    convertidoMass = valorenKilogramos / unitsMass[unidadInicial];
+    convertidoMass = (valorenKilogramos / unitsMass[unidadInicial]).toPrecision(3);
     actualizarResultadoMass();
+    agregarAlHistorial("Masa", valor, unidadInicial, convertidoMass, unidadFinal);
 }
 
 function actualizarResultadoMass() { 

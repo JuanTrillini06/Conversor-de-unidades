@@ -3,28 +3,24 @@
     justify-items: center;
     grid-auto-columns: 1fr; 
     grid-auto-rows: 1fr; 
-    grid-template-columns: 0.5fr 1.5fr 1.5fr; 
+    grid-template-columns:1.5fr 1.5fr; 
     grid-template-rows: 0.5fr auto 0.5fr; 
     gap: 20px 20px; 
     grid-template-areas: 
-      "historial . ."
-      "historial magnitudes imagen"
-      "historial . ."; 
+      ". ."
+      "magnitudes imagen"
+      ". ."; 
   }
-  .historial {
-     grid-area: historial;
-     padding: 10px;
-     border: 2px solid #69C7C1;
-     text-align: center;
- }
   .magnitudes { 
     grid-area: magnitudes; 
     background-color: rgba(45, 155, 240, 0.5);
     border: 2px solid #69C7C1;
+    border-radius: 5px;
     padding: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     ul{
         display: flex;
         flex-direction: column;

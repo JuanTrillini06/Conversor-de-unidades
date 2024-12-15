@@ -5,8 +5,9 @@ function convertirLongitud () {
     const unidadFinal = document.getElementById("long-final").value;
     const valor = parseFloat(document.getElementById("valor-long").value);
     let valorenMetros = valor * unitsLong[unidadInicial];
-    convertidoLong = valorenMetros / unitsLong[unidadFinal];
+    convertidoLong = (valorenMetros / unitsLong[unidadFinal]).toPrecision(3);
     actualizarResultado();
+    agregarAlHistorial("Longitud", valor, unidadInicial, convertidoLong, unidadFinal);
 }
 function actualizarResultado() { 
     const resultadoLong = document.getElementById("resultado-long"); 

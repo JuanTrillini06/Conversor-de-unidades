@@ -5,8 +5,9 @@ function convertirVolumen(){
     const unidadFinal = document.getElementById("vol-final").value;
     const valor = document.getElementById("valor-vol").value;
     let valorenLitros = valor * unitsVol[unidadFinal];
-    convertidoVol = valorenLitros / unitsVol[unidadInicial];
+    convertidoVol = (valorenLitros / unitsVol[unidadInicial]).toPrecision(3);
     actualizarResultadoVol();
+    agregarAlHistorial("Volumen", valor, unidadInicial, convertidoVol, unidadFinal);
 }
 
 function actualizarResultadoVol() { 
