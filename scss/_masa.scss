@@ -35,6 +35,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    #valor-mass{
+      display: flex;
+    }
     #mass-inicial{
       background-color: lightgray;
       border-radius: 5px;
