@@ -9,7 +9,16 @@
     grid-template-areas: 
       "historial . ."
       "historial conv-volumen imagen"
-      "historial . ."; 
+      "historial . .";
+      @media  (max-width: 480px){
+        grid-template-columns: 0.5fr 1.5fr; 
+        grid-template-rows: 0.5fr auto 0.5fr; 
+        gap: 20px 20px; 
+        grid-template-areas: 
+          "historial . "
+          "historial conv-volumen"
+          "historial imagen ";
+    } 
   }
   .historial {
      grid-area: historial;

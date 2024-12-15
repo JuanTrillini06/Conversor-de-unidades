@@ -68,6 +68,14 @@ footer .return a {
   gap: 20px 20px;
   grid-template-areas: ". ." "magnitudes imagen" ". .";
 }
+@media (max-width: 480px) {
+  .principal {
+    grid-template-columns: 1.5fr;
+    grid-template-rows: 0.2fr 1.5fr 1.5fr;
+    gap: 20px 20px;
+    grid-template-areas: "." "magnitudes" "imagen";
+  }
+}
 
 .magnitudes {
   grid-area: magnitudes;
@@ -121,6 +129,14 @@ footer .return a {
   gap: 20px 20px;
   grid-template-areas: "historial . ." "historial conv-longitud imagen" "historial . .";
 }
+@media (max-width: 480px) {
+  .longitud {
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    gap: 20px 20px;
+    grid-template-areas: "historial . " "historial conv-longitud" "historial imagen ";
+  }
+}
 
 .historial {
   grid-area: historial;
@@ -161,6 +177,7 @@ footer .return a {
   width: 50%;
   height: auto;
   border-radius: 5px;
+  padding: 5px;
 }
 
 .volumen {
@@ -172,6 +189,14 @@ footer .return a {
   grid-template-rows: 0.5fr auto 0.5fr;
   gap: 20px 20px;
   grid-template-areas: "historial . ." "historial conv-volumen imagen" "historial . .";
+}
+@media (max-width: 480px) {
+  .volumen {
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    gap: 20px 20px;
+    grid-template-areas: "historial . " "historial conv-volumen" "historial imagen ";
+  }
 }
 
 .historial {
@@ -224,6 +249,14 @@ footer .return a {
   grid-template-rows: 0.5fr auto 0.5fr;
   gap: 20px 20px;
   grid-template-areas: "historial . ." "historial conv-masa imagen" "historial . .";
+}
+@media (max-width: 480px) {
+  .masa {
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    gap: 20px 20px;
+    grid-template-areas: "historial . " "historial conv-masa" "historial imagen ";
+  }
 }
 
 .historial {
