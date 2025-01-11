@@ -8,12 +8,15 @@ function agregarAlHistorial(tipo, valorInicial, unidadInicial, valorFinal, unida
         valorFinal,
         unidadFinal
     };
+
     historial.unshift(nuevoRegistro);
     if (historial.length > 5) {
         historial.pop();
     }
-    console.log(historial)
+
+
     sessionStorage.setItem("historial", JSON.stringify(historial));
+
     actualizarHistorial();
 }
 
@@ -25,11 +28,13 @@ function actualizarHistorial(){
 
     for (let i = 0; i < historialGuardado.length; i++) {
         let plantillaHistorial = document.createElement("div");
+
         plantillaHistorial.innerHTML = `
             <h3>${historialGuardado[i].tipo}</h3>
             <p>${historialGuardado[i].unidadInicial}: ${historialGuardado[i].valorInicial}</p>
             <p>${historialGuardado[i].unidadFinal}: ${historialGuardado[i].valorFinal}</p>
             <br>`;
+        
         aside.appendChild(plantillaHistorial);   
     }
 }
