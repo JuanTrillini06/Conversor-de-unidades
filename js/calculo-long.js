@@ -11,6 +11,8 @@ function convertirLongitud () {
 }
 function actualizarResultado() { 
     const resultadoLong = document.getElementById("resultado-long"); 
-    resultadoLong.innerText = convertidoLong; 
+    resultadoLong.innerText = convertidoLong;
+    let notificar = (convertidoLong != 0 || NaN) ? Toastify({ text:"Calculo realizado", duration: 3000,style:{background:"linear-gradient(to right, #7DDA58, #E2EAF4)"},}).showToast() : Toastify({ text:"Calculo erroneo", duration: 3000, style:{background:"linear-gradient(to right, #E4080A, #E2EAF4)",}}).showToast()
+
 }
 
