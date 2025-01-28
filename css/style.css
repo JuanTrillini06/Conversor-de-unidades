@@ -66,14 +66,14 @@ footer .return a {
   grid-template-columns: 1.5fr 1.5fr;
   grid-template-rows: 0.5fr auto 0.5fr;
   gap: 20px 20px;
-  grid-template-areas: ". ." "magnitudes imagen" ". .";
+  grid-template-areas: ". ." "magnitudes img" ". .";
 }
 @media (max-width: 480px) {
   .principal {
     grid-template-columns: 1.5fr;
     grid-template-rows: 0.2fr 1.5fr 1.5fr;
     gap: 20px 20px;
-    grid-template-areas: "." "magnitudes" "imagen";
+    grid-template-areas: "." "magnitudes" "img";
   }
 }
 
@@ -113,10 +113,13 @@ footer .return a {
 }
 
 .imagen {
-  grid-area: imagen;
   width: 50%;
   height: auto;
   border-radius: 5px;
+}
+
+.img {
+  grid-area: img;
 }
 
 .longitud {
@@ -127,14 +130,14 @@ footer .return a {
   grid-template-columns: 0.5fr 1.5fr 1.5fr;
   grid-template-rows: 0.5fr auto 0.5fr;
   gap: 20px 20px;
-  grid-template-areas: "historial . ." "historial conv-longitud imagen" "historial . .";
+  grid-template-areas: "historial . ." "historial conv-longitud img" "historial . .";
 }
 @media (max-width: 480px) {
   .longitud {
     grid-template-columns: 0.5fr 1.5fr;
     grid-template-rows: 0.5fr auto 0.5fr;
     gap: 20px 20px;
-    grid-template-areas: "historial . " "historial conv-longitud" "historial imagen ";
+    grid-template-areas: "historial . " "historial conv-longitud" "historial img ";
   }
 }
 
@@ -155,6 +158,9 @@ footer .return a {
   flex-direction: column;
   justify-content: space-around;
 }
+.conv-longitud #valor-long {
+  display: flex;
+}
 .conv-longitud #long-inicial {
   background-color: lightgray;
   border-radius: 5px;
@@ -173,11 +179,14 @@ footer .return a {
 }
 
 .imagen {
-  grid-area: imagen;
   width: 50%;
   height: auto;
   border-radius: 5px;
   padding: 5px;
+}
+
+.img {
+  grid-area: img;
 }
 
 .volumen {
@@ -188,14 +197,14 @@ footer .return a {
   grid-template-columns: 0.5fr 1.5fr 1.5fr;
   grid-template-rows: 0.5fr auto 0.5fr;
   gap: 20px 20px;
-  grid-template-areas: "historial . ." "historial conv-volumen imagen" "historial . .";
+  grid-template-areas: "historial . ." "historial conv-volumen img" "historial . .";
 }
 @media (max-width: 480px) {
   .volumen {
     grid-template-columns: 0.5fr 1.5fr;
     grid-template-rows: 0.5fr auto 0.5fr;
     gap: 20px 20px;
-    grid-template-areas: "historial . " "historial conv-volumen" "historial imagen ";
+    grid-template-areas: "historial . " "historial conv-volumen" "historial img ";
   }
 }
 
@@ -216,6 +225,9 @@ footer .return a {
   flex-direction: column;
   justify-content: space-around;
 }
+.conv-volumen #valor-vol {
+  display: flex;
+}
 .conv-volumen #vol-inicial {
   background-color: lightgray;
   border-radius: 5px;
@@ -234,10 +246,14 @@ footer .return a {
 }
 
 .imagen {
-  grid-area: imagen;
   width: 50%;
   height: auto;
   border-radius: 5px;
+  padding: 5px;
+}
+
+.img {
+  grid-area: img;
 }
 
 .masa {
@@ -248,14 +264,14 @@ footer .return a {
   grid-template-columns: 0.5fr 1.5fr 1.5fr;
   grid-template-rows: 0.5fr auto 0.5fr;
   gap: 20px 20px;
-  grid-template-areas: "historial . ." "historial conv-masa imagen" "historial . .";
+  grid-template-areas: "historial . ." "historial conv-masa img" "historial . .";
 }
 @media (max-width: 480px) {
   .masa {
     grid-template-columns: 0.5fr 1.5fr;
     grid-template-rows: 0.5fr auto 0.5fr;
     gap: 20px 20px;
-    grid-template-areas: "historial . " "historial conv-masa" "historial imagen ";
+    grid-template-areas: "historial . " "historial conv-masa" "historial img ";
   }
 }
 
@@ -276,6 +292,9 @@ footer .return a {
   flex-direction: column;
   justify-content: space-around;
 }
+.conv-masa #valor-mass {
+  display: flex;
+}
 .conv-masa #mass-inicial {
   background-color: lightgray;
   border-radius: 5px;
@@ -294,10 +313,14 @@ footer .return a {
 }
 
 .imagen {
-  grid-area: imagen;
   width: 50%;
   height: auto;
   border-radius: 5px;
+  padding: 5px;
+}
+
+.img {
+  grid-area: img;
 }
 
 /*# sourceMappingURL=style.css.map */
